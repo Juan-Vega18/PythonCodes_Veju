@@ -1,0 +1,79 @@
+#PREGUNTAS INVESTIGACIÓN FASE 1 
+
+
+Cada pregunta tiene el añadido de: <!Otorga la respuesta paso a paso explicando la información necesaria para resolver la pregunta>
+tokens añadidos: 30
+
+Q1 {
+    Pregunta: Sean a = 2i -3j + 0k y b = -7i -5j + 4k vectores de R3, hallar a+b, a-b,
+    Respuesta: a+b = -5i -8j + 4k, a-b = 9i + 2j - 4k. 
+    #tokensP: 39
+}
+
+
+Q2 {
+    Pregunta: Sean a = 2i -3j + 0k, b = -7i - 5j + 4k y c = 6i + j + 8k, hallar 3a - 2b + 4c.
+    Respuesta: 3a -2b + 4c = 44i + 5j + 24k 
+    #tokensP: 53
+}
+
+Q3 {
+    Pregunta: Sean a = 2i - 3j + 0k, b = -7i -5j + 4k y c = 6i + j + 8k, hallar A(a) + B(b) + Y(c) siendo A,B,Y escalares
+    Respuesta: Aa = (2ai - 3aj + 0k), Bb = (-7bi - 5bj + 4bk), Yc = (6yi + yj + 8yk), Aa + Bb + Yc = (2a - 7b + 6y)i + (-3a -5b + y)j + (4b+8y)k
+    #tokens: 59
+}
+
+Q4 {    
+    Pregunta: Halle el producto escalar de los dos vectores (1,2,-1,0);(3,-7,4,-2)
+    Respuesta: -15
+    #tokens: 29
+}
+
+
+Q5 {
+    Pregunta: Realice la siguiente operación con vectores. a = (4,-1,3) y b = (2,5,-7), c = (-6,8,0), hallar el producto punto entre (a-b) y c
+    Respuesta: -60
+    #tokens: 50
+}
+
+Q6 {
+    Pregunta: Realice la siguiente operación con vectores. a = (4,-1,3), c = (-6,8,0), hallar: (a.c/a.a)a siendo a.c y a.a producto punto
+    Respuesta: (-64/13, 16/13, -48/13)
+    #tokens: 45
+}
+
+Q7 {
+    Pregunta: Verifique que par de vectores son ortogonales, (2,-3);(3,2), (7,-5, 4, 11);(2,4,-3,2), (1,4,-7);(2,3,2)
+    Respuesta: (2,-3);(3,2) son ortogonales, (7,-5, 4, 11);(2,4,-3,2) no son ortogonales producto punto es igual a 4, (1,4,-7);(2,3,2) son ortogonales
+    #tokens: 57
+    #Eventualidad: el modelo dio la respuesta correcta con un procedimiento incorrecto en un caso. 
+}
+
+Q8 {
+    Pregunta: Determine un numero 'v' tal que (1,-2,3,5) es ortogonal a (-4,v,6,-1)
+    Respuesta: v = 9/2. Dos vectores son ortogonales (o perpendiculares) si su producto escalar es igual a cero. El producto escalar de dos vectores se calcula multiplicando sus componentes correspondientes y sumando los productos.
+Dado que los vectores son (1,-2,3,5) y (-4,v,6,-1), establecemos su producto escalar igualado a cero.
+(1*-4) + (-2*v) + (3*6) + (5*-1) = 0
+-4 -2v +18 -5 = 0
+-2v +9 = 0
+-2v = -9
+ v = 9/2
+Por lo tanto, el número 'v' que hace que los vectores sean ortogonales es 9/2 o 4.5.
+    #tokens: 30
+}
+
+Q9 {
+    Pregunta: Encuentre el producto cruz entre los vectores a,b. a = 4i-10j-5k, b =-10i-8j+7k
+    Respuesta: -100i + 22j - 132k. El producto cruz entre dos vectores se calcula utilizando la siguiente fórmula: a x b = (a2b3 - a3b2)i + (a3b1 - a1b3)j + (a1b2 - a2b1)k, Donde a1, a2, a3 representan las componentes del vector a, y b1, b2, b3 representan las componentes del vector b. En este caso, el vector a tiene las siguientes componentes:
+a1 = 4, a2 = -10, a3 = -5, Y el vector b tiene las siguientes componentes: b1 = -10, b2 = -8, b3 = 7
+Sustituyendo estos valores en la fórmula, obtenemos: a x b = ((-10)(7) - (-5)(-8))i + ((-5)(-10) - (4)(7))j + ((4)(-8) - (-10)(-10))k = (-70 - 40)i + (50 - 28)j + (-32 -100k) = -110i + 22j - 132k
+Por lo tanto, el producto cruz entre los vectores a y b es -110i + 22j - 132k.
+    #tokens: 36
+}
+
+Q10 {
+    Pregunta: Encuentre el producto vectorial entre los vectores u y v. u = ai + bj + ck, v = i + j + k
+    Respuesta: (b-c)i + (c-a)j + (a-b)k
+    #tokens: 30
+
+}

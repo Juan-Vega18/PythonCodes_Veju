@@ -1,0 +1,97 @@
+#PREGUNTAS DE INVESTIGACIÓN FASE 1 Movimiento en dos dimensiones
+
+Cada pregunta tiene el añadido de: <!Otorga la respuesta paso a paso explicando la información necesaria para resolver la pregunta>
+tokens añadidos: 30
+MEDIDA DE TOKENS EN GPT-3.5 
+
+CHAT SPECS: 
+MODEL: GPT-3.5-TURBO-16K-0613
+TEMPERATURE: 0.6
+MAXIMUM LENGHT: 4080 TOKENS
+TOP P: 1
+
+
+Preguntas de movimiento en dos dimensiones
+Los temas de movimiento en dos dimensiones son mucho más extensos así que intentaré definir la mayor cantidad de preguntas
+que pueda analizar para así, obtener una mejor idea del comportamiento del modelo en distintas situaciones. 
+
+Es por eso que, el archivo Questions I.3 se dividirá en más de uno, subdividiendolo con Questions I.3.N con N partes según la cantidad
+de preguntas abarcadas. 
+
+#Las respuesta presentes en este documento son las CORRECTAS, no las que otorgó el modelo. 
+
+Q1 {
+    Pregunta: Considere los siguientes controles en un automóvil: acelerador, freno, volante. ¿En esta lista cuáles son los controles que provocan una aceleración en el automóvil? a) los tres controles, b) el acelerador y el freno, c) sólo el freno, d) sólo el acelerador,
+    Respuesta: (A. Los tres controles, basicamente porque el volante ejerce y transmite un movimiento a las ruedas, este movimiento es producido por una fuerza, el acelerador incrementa las revoluciones del motor y aumenta 
+la velocidad del vehículo y el freno ejerce una reducción de la velocidad, esta diferencia negativa de velocidad es una aceleración negativa. ),
+    #tokensP: 79
+}
+
+-NOTA: Se aplicará la respuesta basándonos en la propia respuesta del Serway. 
+
+Q2{
+    Pregunta: Una partícula parte del origen en t=0 con una velocidad inicial que tiene una componente x de 20 m/s y otra componente y de -15 m/s. La partícula se mueve en el plano xy sólo con una componente x de aceleración, dada por ax = 4.0 m/s2. A) Determine el vector velocidad total en cualquier tiempo. ,
+    Respuesta: (Para resolver este problema, es necesario entender que cuando se trabaja en mas de una dimensión, se tendrá que discriminar y operar las dimensiones por separado, por lo tanto, analizando el problema y la pregunta es fácil saber que, si y no tiene aceleración, la componente de la velocidad en y es consante, la solución se enfocará en analizar el comportamiento en x, que, utilizando coordenadas cartesianas y los vectores unitarios de la base de 
+R2, decimos que vfx = vix + axt es decir, la velocidad final en x, es igual a la aceleración en x por el tiempo, esta fórmula se obtiene de un despeje de las fórmulas cinemáticas habituales. De forma vectorial, expresamos
+vf = vi + at = (vix + axt)i + (viy + ayt)j, y, posteriormente se reemplaza y se operan, vf = (20 m/s + (4.0 m/s^2)t)i + ((-15 m/s) + 0t)j, entonces, la respuesta en forma vectorial de la velocidad para cualquier tiempo es: 
+vf = ((20 + 4.0t)i - 15j) m/s),
+    #tokensP: 80
+}
+
+
+Q3{
+    Pregunta: Con el vector de velocidad final vf = ((20 + 4.0t)i - 15j) m/s) calcule la velocidad y la rapidez de una partícula en t = 5.0 s ,
+    Respuesta: (Para calcular la velocidad, es necesario reemplazar en el vector el valor puntual de tiempo que el problema otorga, esto sería: vf = ((20 + 4.0 (5.0)i - 15j) m/s), es decir: vf = (40i - 15j) m/s, y para hallar la rapidez, recurriendo a la definición, requerimos hallar la magnitud del vector velocidad, para ello se utiliza hallar la fórmula vf = |vf| = sqrt(vxf^2 + vyf^2), reemplazando el vector velocidad en la fórmula se encuentra que la rapidez de la partícula es: 43 m/s),
+    #tokensP: 46
+}
+
+
+Q4{
+    Pregunta: A medida que un proyectil lanzado hacia arriba se mueve en su trayectoria parabólica, ¿en qué punto a lo largo de su trayectoria los vectores velocidad y aceleración del proyectil son mutuamente perpendiculares? a) en ninguna parte, b) en el punto más alto, c) en el punto de lanzamiento. ii) Con las mismas opciones, ¿en qué punto son paralelos los vectores velocidad y aceleración del proyectil,
+    Respuesta: Los vectores de aceleración y velocidad son perpendiculares en el punto más alto de la trayectoría, es decir, opción b. y en ningún punto son paralelos, es decir, opción a, en ninguna parte. ,
+    #tokensP: 109
+}
+
+
+Q5{
+    Pregunta: Un atleta que participa en salto de longitud deja el suelo a un ángulo de 20.0° sobre la horizontal y con una rapidez de 11.0 m/s. ¿Qué distancia salta en la dirección horizontal?,
+    Respuesta: 7.94 Metros, se utiliza la formula de distancia horizontal en términos del ángulo y de la velocidad inicial,
+    #tokensP: 52
+}
+
+
+Q6{
+    Pregunta: Una piedra es lanzada hacia arriba desde lo alto de un edificio, a un ángulo de 30.0° con la horizontal, y con una rapidez inicial de 20.0 m/s, La altura del edificio es de 45.0 m, ¿Cuánto tarda la piedra en llegar al suelo?,
+    Respuesta: ,
+    #tokensP: 74
+}
+
+
+Q7{
+    Pregunta: Una esquiadora deja la rampa y se desliza en la dirección horizontal con una rapidez de 25.0 m/s. El plano de aterrizaje bajo ella cae con una pendiente de 35.0°. ¿Dónde aterrizará en el plano?,
+    Respuesta: Lo primero necesario es entender que, según el problema, se deja una rampa, podemos asumir una altura y desde la rampa hasta el suelo, además de esto, se puede fijar una distancia x desde el punto de referencia que sería el punto de lanzamiento, esta distancia sería el alcance horizontal, además de esto, la esquiadora recorrerá una trayectoria parabólica cuya distancia se puede ver como d, un triángulo se forma tras entender el planteaamiento. La posición final será xf = vixt = 25.0 m/s * t, yf = xiy + viyt + 1/2*a*t**2 = 0 + 0t - 9.8t^2/2, teniendo esto en cuenta, la posición final en x será xfx = cos(35)d, y xfy = -sen(35)d (el signo - aparece ya que el punto de referencia está sobre el suelo, por lo tanto, cuando la esquiadora caiga, su altura será "negativa"). Ahora igualamos las distancias finales, xf = 25.0 m/s * t = cos(35)d, y despejando para t = cos(35)*d/(25.0 m/s), con el valor del tiempo, lo reemplazamos el la distancia final en y, que si igualamos las distancias finales en y obtenemos xfy = -sen(35)d = -9.8*t^2/2, y despejando para el tiempo y reemplazando el valor del tiempo por el valor en términos del coseno y la distancia, valores que habiamos hallado antes, obtenemos: -dsen(35) = (-9.8/2)*(dcos(35)/25.0)^2, despejando la distancia y resolviendo para ella obtenemos que d = 109 metros. Luego de eso, con el valor de la distancia, evaluamos las posiciones finales tanto en x como en y, y obtenemos que xfx = 83.3 metros.  ,
+    #tokensP: 63
+}
+
+Q8{
+    Pregunta: Una partícula se mueve en una trayectoria circular de radio r con rapidez v. Luego aumenta su rapidez a 2v mientras viaja a lo largo de la misma trayectoria 
+circular. i) ¿En qué factor cambió la aceleración centrípeta de la partícula (elija una)? a) 0.25, b) 0.5, c) 2, d) 4, e) imposible de determinar. ii) De las mismas opciones, 
+¿en qué factor cambió el periodo de la partícula?,
+    Respuesta: Debido a que la aceleración centrípeta es proporcional al cuadrado de la rapidez sobre el radio, si aumentamos al doble la rapidez, esta crece en un factor de 4, es decir, opción d. Con respecto al periodo, este es proporcional a 2pi por el radio sobre la rapidez, entonces, si aumentamos al doble la rapidez, disminuimos a la mitad el periodo, entonces, la respuesta es 0.5, opción b. ,
+    #tokensP: 127
+}
+
+
+Q9{
+    Pregunta: ¿Cuál es la aceleración centrípeta de la Tierra a medida que se mueve en su órbita alrededor del Sol?,
+    Respuesta: Para resolver esta pregunta necesitamos más información, por ejemplo, la distancia tierra-sol es de 1.496 x 10^11 m, debido a que no se conoce la rapidez orbital de la tierra, es posible usar las fórmulas de movimiento circular para aplicar datos conocidos. El periodo T = 2pir/v, despejando la velocidad, v = 2pir/T, y reemplazando en la fórmula de aceleración centrípeta a = ((2pir/T)^2/r) = (4(pir)^2/T^2)/r = 4pi^2r/T^2, y aquí es posible reemplazar. Teniendo esto, sabemos que el periodo de movimiento es de 1 año, esto son 3.156 x 10^7 segundos, entonces, se reempla en la fórmula y obtenemos: aceleración centrípeta = 4pi^2(1.496 x 10^11 m)/(3.156 x 10^7 s)^2 =  5.93 x 10^-3 m/s^2,
+    #tokensP: 34
+}
+
+
+Q10{
+    Pregunta: Una partícula se mueve a lo largo de una trayectoria y su rapidez aumenta con el tiempo. i) ¿En cuál de los siguientes casos sus vectores aceleración y velocidad son paralelos? a) cuando la trayectoria es circular, b) cuando la trayectoria es recta, c) cuando la trayectoria es una parábola, d) nunca. ii) De las mismas opciones, ¿en cuál caso sus vectores aceleración y velocidad son perpendiculares en cualquier parte de la trayectoria?,
+    Respuesta: b). El vector velocidad es tangente a la trayectoria. Si el vector aceleración debe ser paralelo al vector velocidad, también debe ser tangente a la trayectoria, lo que requiere que el vector aceleración no tenga componente perpendicular a la trayectoria. Si la trayectoria no cambia de dirección, el vector 
+aceleración tendrá una componente radial, perpendicular a la trayectoria. En consecuencia, la trayectoria debe permanecer recta. Y, respecto a la segunda pregunda, la respuesta es d). Si el vector aceleración debe ser perpendicular al vector velocidad, no debe tener componente tangente a la trayectoria. Por otra parte, si la rapidez está cambiando, debe haber una aceleración tangente a la trayectoria. Por lo tanto, los vectores de velocidad y aceleración NUNCA pueden ser perpendiculares si no hay cambio de rapidez.
+    #tokensP: 121
+}

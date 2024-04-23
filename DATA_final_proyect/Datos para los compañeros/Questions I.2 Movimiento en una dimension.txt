@@ -1,0 +1,114 @@
+#PREGUNTAS DE INVESTIGACIÓN FASE 1 Movimiento en una dimensión
+
+Cada pregunta tiene el añadido de: <!Otorga la respuesta paso a paso explicando la información necesaria para resolver la pregunta>
+tokens añadidos: 30
+MEDIDA DE TOKENS EN GPT-3.5 
+
+CHAT SPECS: 
+MODEL: GPT-3.5-TURBO-16K-0613
+TEMPERATURE: 0.6
+MAXIMUM LENGHT: 4080 TOKENS
+TOP P: 1
+
+
+Preguntas de movimiento en una dimensión
+
+#Las respuesta presentes en este documento son las CORRECTAS, no las que otorgó el modelo. 
+
+
+Q1 {
+    Pregunta: Un tren parte de la estación con una velocidad inicial de 10 m/s y acelera a razón de 2 m/s². ¿Qué distancia recorre en los primeros 5 segundos?,
+    Respuesta: 75m,
+    #tokensP: 61
+}
+
+
+Q2 {
+    Pregunta: Un automóvil viaja a una velocidad constante de 80 km/h durante 2 horas. ¿Qué distancia recorre?,
+    Respuesta: Recorre 160 kilómetros. ,
+    #tokensP: 46
+}
+
+
+Q3 {
+    Pregunta: Una pelota se lanza verticalmente hacia arriba con una velocidad inicial de 15 m/s. ¿Cuánto tiempo tarda en alcanzar su altura máxima?,
+    Respuesta:1.53 segundos ,
+    #tokensP: 54
+}
+
+
+Q4 {
+    Pregunta: Un paracaidista cae desde un avión a una altura de 4000 metros. Si la resistencia del aire es despreciable, ¿a qué velocidad llega al suelo?,
+    Respuesta: 280 m/s ,
+    #tokensP: 58
+}
+
+
+Q5 {
+    Pregunta Una partícula se mueve a lo largo del eje x. Su posición varía con el tiempo 
+de acuerdo con la expresión x = -4t +2t^2
+, donde x está en metros y t está en 
+segundos, Determine el desplazamiento de la partícula en los intervalos de tiempo 
+t = 0 a t = 1 s y t =  1  s a t = 3 s. 
+    Respuesta: -2 metros y 8 metros. 
+    #tokensP: 
+}
+
+
+Q6{
+    Pregunta: Una científica estudia la biomecánica del cuerpo humano. Ella determina la velocidad de un sujeto experimental mientras 
+corre a lo largo de una línea recta con una rapidez constante. La científica activa el cronómetro cuando el corredor pasa 
+por un punto conocido y lo detiene después de que el corredor pasa por otro punto a 20 m de distancia. El intervalo de 
+tiempo que indica el cronómetro es 4.0 s.
+¿Cuál es la velocidad del corredor?,
+    Respuesta: 5 m/s,
+    #tokensP: 138
+}
+
+
+Q7{
+    Pregunta: Un automóvil que viaja con una rapidez constante de 45.0 
+m/s pasa por donde un patrullero en motocicleta está oculto detrás de un anuncio espectacular. Un segundo después 
+de que el automóvil pasa el anuncio, el patrullero sale de su 
+escondite para detener al automóvil, que acelera con una 
+relación constante de 3.00 m/s2
+. ¿Cuánto tiempo tarda en 
+dar alcance al automóvil?, 
+    Respuesta: t = 31.0 s
+    #tokensP: 138
+}
+
+
+Q8{
+    Pregunta: ¿La velocidad instantánea de un objeto en un instante de tiempo alguna vez es mayor en magnitud que la velocidad promedio en un intervalo de tiempo que contenga al instante? 
+¿Alguna vez es menor?,
+    Respuesta: Por supuesto, podemos tener un momento en el tiempo en el que el cuerpo acelere provocando un aumento repentino en la velocidad en ese instante, así mismo, el cuerpo puede desacelerar de inmediato, haciendo que este cambio sea pequeño en el intervalo, siendo, altamente probablemente mayor en magnitud a la velocidad promedio en este intervalo, aplica igual si es una detención momentanea de alto impacto en el cuerpo. 
+    #tokensP: 65
+}
+
+
+Q9 {
+    Pregunta: Cuando el piloto invierte la hélice en un bote que se mueve 
+al norte, el bote se mueve con una aceleración dirigida al sur. 
+Si la aceleración del bote sigue constante en magnitud y dirección, ¿qué le ocurrirá al bote (elija una)? a) Eventualmente 
+se detendrá y luego permanecerá en reposo. b) Al final se detendrá y luego comenzará a aumentar rapidez en la dirección 
+hacia adelante. c) Eventualmente se detendrá y luego comenzará a aumentar rapidez en la dirección contraria. d) Nunca 
+se detendrá sino que perderá rapidez cada vez más lentamente 
+por siempre. e) Nunca se detendrá sino que continuará ganando rapidez en la dirección hacia adelante.,
+    Respuesta: ((C) Basicamente el bote se dirige en sentido sur-norte ya que la hélice impulsa en este sentido, sin embargo, cuando el bote invierte de forma eventual la dirección de la hélice, le energía que el bote llevaba en la dirección sur-norte se irá cancelando producto de la fuerza contraria que ejerce la hélice para frenar el bote, justo cuanto este se detenga, empezará a impulsar en sentido norte-sur el bote acelerandolo),
+    #tokensP: 187
+}
+
+
+Q10 {
+    Pregunta: Un patinador se desliza por una larga colina, parte del reposo y se mueve con aceleración constante para cubrir cierta 
+distancia en 6 s. En un segundo intento, parte del reposo y 
+se mueve con la misma aceleración sólo durante 2 s. ¿Qué 
+tan diferente es su desplazamiento en este segundo intento, 
+comparado con el primero? a) un tercio de largo, b) tres 
+veces mayor, c) un noveno de largo, d) nueve veces mayor, 
+e) 1/3 veces de largo, f) 3 veces mayor, g) ninguna de 
+estas respuestas,
+    Respuesta: (1/9, opción c) ,
+    #tokensP: 152
+}

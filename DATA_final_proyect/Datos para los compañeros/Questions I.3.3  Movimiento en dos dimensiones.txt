@@ -1,0 +1,92 @@
+#PREGUNTAS DE INVESTIGACIÓN FASE 1 Movimiento en dos dimensiones
+
+Cada pregunta tiene el añadido de: <!Otorga la respuesta paso a paso explicando la información necesaria para resolver la pregunta>
+tokens añadidos: 30
+MEDIDA DE TOKENS EN GPT-3.5 
+
+CHAT SPECS: 
+MODEL: GPT-3.5-TURBO-16K-0613
+TEMPERATURE: 0.6
+MAXIMUM LENGHT: 4080 TOKENS
+TOP P: 1
+
+
+Preguntas de movimiento en dos dimensiones
+Los temas de movimiento en dos dimensiones son mucho más extensos así que intentaré definir la mayor cantidad de preguntas
+que pueda analizar para así, obtener una mejor idea del comportamiento del modelo en distintas situaciones. 
+
+Es por eso que, el archivo Questions I.3 se dividirá en más de uno, subdividiendolo con Questions I.3.N con N partes según la cantidad
+de preguntas abarcadas. 
+
+#Las respuesta presentes en este documento son las CORRECTAS, no las que otorgó el modelo. 
+
+Q1 {
+    Pregunta: a) ¿Una partícula, que se mueve con rapidez instantánea de 3.00 m/s en una trayectoria con 2.00 m de radio de curvatura, podría tener una aceleración de 6.00 m/s2 de magnitud? b)¿Podría tener como magnitud de aceleración a = 4.00 m/s^2? En cada caso, si la respuesta es sí, explique cómo puede ocurrir; si la respuesta es no, explique por qué.
+    Respuesta: Respecto a la primer pregunta, ac = v^2/r = 3^2/2 = 4.5 m/s^2. Entonces, una partícula podrá tener una aceleración (suma de sus componentes) mayor o igual en magnitud a 4.5 m/s^2 pero no menor. Esto porque la magnitud de la aceleración es: sqrt(at^2 + ar^2), entonces, independientemente del valor de la aceleración tangencial, no hay manera en que la magnitud de la aceleración sea menor a 4.5 m/s^2, ahora, como vector resultante de sus componentes si es posible que la partícula se acelere o desacelere. ,
+    #tokensP: 115
+}
+
+
+Q2 {
+    Pregunta: Un tren frena mientras entra a una curva horizontal cerrada, y frena de 90.0 km/h a 50.0 km/h en los 15.0 s que tarda en cubrir la curva. El radio de la curva es de 150 m. Calcule la aceleración en el momento en que la rapidez del tren alcanza 50.0 km/h. Suponga que continúa frenando a este tiempo con la misma relación.
+    Respuesta: El primer paso es hallar la aceleración centrípeta del tren, para ello usaremos la fórmula: ac = v^2/r, convertirmos los kilometros por hora a metros sobre segundo sabiendo que para convertir los kilómetros por hora a metros sobre segundo únicamente debemos dividir los kilometros por 3.6, para este problema obtenemos: 90.0 km/h = 25 m/s, 50 km/h = 13.9 m/s. Luego, utilizando la fórmula de aceleración centrípeta, reemplazamos 13.9^2/150 = 1.29 m/s^2, ahora, para hallar la aceleración tangencial se usa el dv/dt con sus diferenciales, Vf = 13.9 m/s^2 y Vi = 25 m/s, t = 15, entonces, reemplazando: 13.9 - 25 / 15 =  -0.74 m/s^2. La magnitud de la aceleración es de sqrt((1.29)^2 + (-0.74)^2) = 1.48 m/s^2, y el ángulo es arctan(|at|/ac) = 29.9° hacia atrás. Es decir, el vector aceleración es a = 1.48 m/s^2 hacia adentro y 29.9° hacia atrás.  ,
+    #tokensP: 100
+}
+
+
+Q3 {
+    Pregunta: Un río tiene una rapidez estable de 0.500 m/s. Un estudiante nada corriente arriba una distancia de 1.00 km y 
+de regreso al punto de partida. Si el estudiante puede nadar con una rapidez de 1.20 m/s en aguas tranquilas, ¿cuánto tarda el viaje? 
+Compare esta respuesta con el intervalo de tiempo requerido para el viaje si el agua estuviese tranquila.
+    Respuesta: El estudiante finalmente nadará un kilometro río arriba y luego volverá a su punto inicial, es decir, recorre en toda su trayectoria 2000 metros. Si el agua está tranquila, el recorrido sería basicamente d = vt, y, queriendo hallar el tiempo, despejamos, tal que t = d/v, entonces t = 2000m / 1.20 m/s = 1670 segundos aproximadamente. El tiempo total de nado será igual al tiempo que le toma al estudiante nadar la distancia mencionada hacia arriba y el tiempo que le toma regresar al punto inicial, es decir, t_total = t_up + t_down. El tiempo de subida será t_up = 1000 / (1.20 - 0.500) = 1.43e3 segundos, en este caso, la velocidad neta del estudiante será la velocidad a la que él puede nadar menos la velocidad del agua que va en sentido contrario a su desplazamiento. El tiempo de bajada será t_down = 1000 / (1.20 + 0.500) = 588 segundos, aquí se suma la velocidad ya que ambas van en la misma dirección. Por lo tanto, el t_total = 1.43e3 + 588 = 2.02e3 segundos. Es decir, si 2.02e3 es el 100% del tiempo, que porcentaje será 1.67e3, aquí se usa una regla de tres simple para hallar el porcentaje de tiempo adicional. t_porcentaje = 1.67e3 * 100 / 2.02e3 = 83%. Es decir, le toma un 17% más de tiempo el recorrer esa misma distancia cuando el río tiene una velocidad. ,
+    #tokensP: 101
+}
+
+
+Q4 {
+    Pregunta: Una bola se balancea en un círculo vertical en el extremo de una cuerda de 1.50 m de largo. Cuando la bola está a 36.9° después del punto más bajo en su viaje hacia arriba, su aceleración total es (-22.5i + 20.2j ) m/s2. En ese instante, a) determine la magnitud de su aceleración radial y b) determine la rapidez y velocidad de la bola.
+    Respuesta: El primer paso es entender que se está solicitando, básicamente se menciona que la bola está 36.9° después del punto más bajo que sería 90° bajo la horizontal. Los componentes de 20.2 y 22.5 m/s^2 a lo largo de la cuerda juntos constituyen la aceleración centrípeta, diremos que ac = (22.5 m/s^2)*sin(36.9°) + (20.2 m/s^2)cos(36.9°) = 29.7 m/s^2. Que significa esto? Se toma la aceleración total por componetes y, como se sabe, la aceleración centrípeta será la que apunta hacia el interior de la trayectoria, es decir, es necesario encontrar las componentes radiales de cada una de las componentes de la aceleración, si fijamos el marco de referencia, en el centro de la bola en la posición que se menciona, y el ángulo de la forma en la que se plantea, es exactamente igual el analisis respecto a seno y coseno para hallar la componente radial. Y respecto a la velocidad y rapidez, sabemos que ac =v^2 / r, despejando para la velocidad v = sqrt(ac*r) reemplazando = sqrt(29.7 m/s^2(1.50m)) = 6.67 m/s tangente a la trayectoria circular, esa sería la rapidez, y el vector velocidad es v = 6.67 m/s con dirección 36.9° bajo la horizontal, 
+    #tokensP: 104
+}
+
+
+Q5 {
+    Pregunta: Un estudiante de ciencias monta en un vagón plataforma de un tren que viaja a lo largo de una pista horizontal recta con una rapidez constante u de 10.0 m/s. El estudiante lanza una bola en el aire a lo largo de una trayectoria que él juzga con un ángulo inicial de 60.0° sobre la horizontal y está en línea con la vía. La profesora del estudiante, que está de pie en el suelo cerca de ahí, observa que la bola se eleva verticalmente. ¿Qué tan alto ve elevarse la bola?
+    Respuesta: Este problema tiene que ver con la velocidad relativa y dependiente del observador. En este caso, llamaremos al estudiante el observador S' y a la profesora el observador S. Para el movimiento inicial, el observador S' plantea que la velocidad de lanzamiento pero la profesora ve que la bola solo se mueve verticalmente, por lo tanto, vx = v'x + u, vx = 0 tal que = v'x = -u = -10.0 m/s. Quiere decir que la componete horizonal de la velocidad del estudiante se anula con la componente horizontal en sentido contrario del lanzamiento, esto tiene sentido ya que el vagon va en dirección positiva y el lanzamiento se hace en dirección negativa. El ángulo de lanzamiento respecto al estudiante es de 60 grados en la parte negativa del eje x, que vendrían a ser 120° empezando desde 0° en la parte positiva, la velocidad en y y la velocidad en x corresponden a las componentes de la velocidad en el lanzamiento, así que para poder despejar v'y, v'x (velocidades de lanzamiento en el sistema de referencia del estudiante) usaremos la tangente, es decir, v'y / v'x = tan(120°) = -1.73, y, despejando v'y = (-1.73)*v'x = (-1.73)(-10 m/s) = 17.3 m/s. Ahora, recurriendo a las fórmulas cinemáticas, sabemos que (vy)^2 = 2gh podemos despejar la altura, entonces, h = vy^2 / 2g = (17.3 m/s)^2 / 2(9.8 m/s^2) esto nos dará una altura de 15.3 metros. En conclusión, para resolver este problema, es necesario entender que los marcos de referencia importan a la hora de realizar los cálculos y hacer mediciones, en la visión del estudiante, hubo un lanzamiento a 60° respect a su posición, sin embargo, la profesora NO vio eso, ella vio únicamente un movimiento vertical. Con estos datos fue resuelto el problema. ,
+    #tokensP: 132
+}
+
+
+Q6 {
+    Pregunta: Antonio en su Corvette acelera de acuerdo a (3.00i - 2.00j) m/s2 mientras Jill en su Jaguar acelera a (1.00i + 3.00j) m/s2. Ambos parten del reposo en el origen de un sistema coordenado xy. Después de 5.00 s, a) ¿cuál es la rapidez de Antonio respecto de Jill?, b) ¿qué distancia los separa?
+    Respuesta: Para resolver esta pregunta será necesario recurrir a la fórmula de velocidad final, vf = vi + at. En este caso, ambos vehículos parten del reposo, por lo tanto, la velocidad inicial de ambos es 0. La velocidad de Antonio a los 5 segundos será: v_A = 0 + a_A*t = (v_A = velocidad Antonio) (3.00i - 2.00j) * 5.00 s = (15.00i - 10.00j) m/s. Lo mismo haremos con la velocidad de Jill = v_J = (1.00i + 3.00j) * 5.00 s =  (5.00i + 15.00j) m/s, ahora, la rapidez de Antonio respecto a Jill será = v_A - v_J = (15.00i - 10.00j) m/s - (5.00i + 15.00j) m/s = (10.0 i - 25.0 j) m/s = sqrt(10^2 + 25^2) m/s = 26.9 m/s, es decir, que la rapidez de Antonio con respecto a Jill será de 26.9 metros por segundo. Y respecto la posición, será necesario hallar el vector posición de ambos, para ello usaremos la fórmula cinemática: r = x0 + v0 + 1/2 *a * t^2. En este caso, la posición de Antonio será: x_A = 1/2 ((3.00i - 2.00j)) * (5.0s)^2 = (37.5i - 25.0 j) m. La posición de Jill será: r_J = 1/2 * ((1.00i + 3.00j))*(5.0s)^2 = 12.5i + 37.5j m. Para hallar la distancia de separación únicamente hay que hacer una resta entre estos dos vectores, r_AJ = r_A = r_J = 37.5i - 25.0 j) m -  12.5i + 37.5j m = 25.0i - 62.5j m, y, finalmente será necesario hallar la magnitud de este vector, es decir, |r_AJ| = sqrt(25.0i - 62.5j) = 67.3 m. 
+    #tokensP: 100
+}
+
+
+Q7 {
+    Pregunta: Un atleta lanza un balón de basquetbol hacia arriba desde el suelo y le da una rapidez de 10.6 m/s a un ángulo de 55.0° sobre la horizontal. a)¿Cuál es la aceleración del balón en el punto más alto de su trayectoria?
+    Respuesta: Para resolver esta pregunta es necesario entender de que aceleración nos habla el problema, para empezar, estamos trabajando en un movimiento parabólico, en este caso, se menciona que el balón fue lanzado con un ángulo y con una rapidez (magnitud de la velocidad) puntual, en este caso, el movimiento de la forma en la que se menciona contará únicamente con la aceleración gravitacional en dirección negativa, en todo los puntos de la trayectoria dirigiéndose hacia el suelo, por lo tanto la aceleración en el punto más alto de la trayectoría es 9.8 m/s^2 hacia abajo. , 
+    #tokensP: 71
+}
+
+
+Q8 {
+    Pregunta: Un astronauta en la superficie de la Luna dispara un cañón para lanzar un paquete experimental, que deja el barril con movimiento horizontal. a) ¿Cuál debe ser la rapidez de boquilla del paquete de modo que viaje completamente alrededor de la Luna y regrese a su ubicación original?
+    Respuesta: Para resolver esta pregunta primero hay que entender el planteamiento, para que el paquete pueda dar una vuelta a la luna y pueda regresar al punto donde fue lanzado, es necesario que iguale la aceleración centrípeta de esta, cabe destacar que un dato necesario es que la gravedad de la luna es 1/6 la de la tierra. Entonces, los cálculos son los siguientes: ac = (9.8 m/s^2)/6 = v^2 /r, también es necesario conocer el radio de la luna, este es 1.74e6 metros. Despejando la velocidad = v = sqrt((9.8 m/s^2)*1.74e6 / 6) = 1685.8 m/s.  ,
+    #tokensP: 71
+}
+
+
+Q9 {
+    Pregunta: Un automóvil estacionado en una pendiente pronunciada tiene vista hacia el océano, con un ángulo de 37.0° bajo la horizontal. El negligente conductor deja el automóvil en neutral y el freno de mano está defectuoso. Desde el reposo en t = 0, el automóvil rueda por la pendiente con una aceleración constante de 4.00 m/s^2 y recorre 50.0 m hasta el borde de un risco vertical. El risco está 30.0 m arriba del océano. Encuentre: a) la rapidez del automóvil cuando llega al borde del risco y el intervalo de tiempo transcurrido cuando llega ahí.
+    Respuesta: Para resolver esta pregunta será necesario usar las fórmulas cinemáticas clásicas, es decir, vf^2 = vi^2 + 2ad, vf = vi + at. En este caso, para encontrar la velocidad final diremos: vf = 2(4 m/s^2)(50 m) = sqrt(400) = 20 m/s y el tiempo para llegar allí es t = vf/a = 20 m/s / 4 m/s^2 = 5 segundos. Teniendo el tiempo final se puede reemplazar en la fórmula de velocidad final que involucra el tiempo: vf = 0 + 4 m/s^2 * 5 s = 20 m/s, es decir, la rapidez del automóvil al final del risco es de 20 m/s y tarda 5 segundos en recorrer la pendiente. ,
+    #tokensP: 167
+}
+
+
+Q10 {
+    Pregunta: Un halcón vuela horizontalmente a 10.0 m/s en línea recta, a 200 m sobre el suelo. Un ratón que llevaba en sus garras se libera después de luchar. El halcón continúa en su ruta con la misma rapidez durante 2.00 s antes de intentar recuperar su presa, se clava en línea recta con rapidez constante y recaptura al ratón 3.00 m sobre el suelo. a) Si supone que la resistencia del aire no actúa sobre el ratón, encuentre la rapidez en picada del halcón.
+    Respuesta: Para resolver esta pregunta será necesario entender cuál es la trayectoria que recorren ambos cuerpos en los movimientos que describen. El ratón cuando es soltado mantiene su velocidad en x pero ahora su altura empieza a disminuir ya que la gravedad ahora que se encuentra libre actúa en su posición relativa respecto a la tierra, por otra parte, el halcón durante un pequeño lapso mantiene su movimiento pero a diferencia del ratón este describre una trayectoria RECTA mientras el ratón se mueve en un trayectoria parabólica. Para hallar la rapidez en picada del Halcón usaremos la fómula cinemática v = d/t. La distancia que describe será 200 m - 3 m = 197 metros. Y, para hallar el tiempo recorrido usaremos la fórmula x = 1/2*g*t^2 (En este caso se despejará el tiempo en el que el ratón recorrió los 197 metros). t = sqrt(2x/g) y, reemplazando y operando obtenemos: t = 6.34 segundos, es decir, el ratón estuvo en caída libre durante 6.34 segundos, ahora, el Halcón por su parte recorrió durante 2 segundos la misma trayectoria, por lo tanto, su tiempo de caída fue: 6.34 - 2.00 = 4.34 segundos, la distancia euclidiana de dos puntos en el espacio R2 se mide usando el teorema de Pitágoras, es decir d = sqrt(x^2 + y^2), la distancia que recorrió el Halcón es x = vt, sabemos que su velocidad era de 10 m/s y el tiempo fue de 4.34 segundos. Por lo tanto x = 43,4 metros. La distancia es entonces d = sqrt(43.4 ^2 + 192^2) = 201,7 metros, y finalmente reemplazando en la fórmula de la velocidad: v = 201,7 metros / 4.34 segundos = 46,5 metros/segundos, esta sería la rapidez en picada del Halcón. 
+    #tokensP: 139
+}

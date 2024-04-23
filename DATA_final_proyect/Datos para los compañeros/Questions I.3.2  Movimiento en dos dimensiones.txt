@@ -1,0 +1,92 @@
+#PREGUNTAS DE INVESTIGACIÓN FASE 1 Movimiento en dos dimensiones
+
+Cada pregunta tiene el añadido de: <!Otorga la respuesta paso a paso explicando la información necesaria para resolver la pregunta>
+tokens añadidos: 30
+MEDIDA DE TOKENS EN GPT-3.5 
+
+CHAT SPECS: 
+MODEL: GPT-3.5-TURBO-16K-0613
+TEMPERATURE: 0.6
+MAXIMUM LENGHT: 4080 TOKENS
+TOP P: 1
+
+
+Preguntas de movimiento en dos dimensiones
+Los temas de movimiento en dos dimensiones son mucho más extensos así que intentaré definir la mayor cantidad de preguntas
+que pueda analizar para así, obtener una mejor idea del comportamiento del modelo en distintas situaciones. 
+
+Es por eso que, el archivo Questions I.3 se dividirá en más de uno, subdividiendolo con Questions I.3.N con N partes según la cantidad
+de preguntas abarcadas. 
+
+#Las respuesta presentes en este documento son las CORRECTAS, no las que otorgó el modelo. 
+
+Q1 {
+    Pregunta: Un atleta rota un disco de 1.00 kg a lo largo de una trayectoria circular de 1.06	m de radio. La rapidez máxima del disco es de 20.0 m/s. Determine la magnitud de la aceleración radial máxima del disco. 
+    Respuesta: Usamos la fórmula de la aceleración centrípeta ac = v^2/r = (20 m/s)^2/1.06m = (400 m^2/s^2)/1.06m y esto es igual a 377 m/s^2, la masa es información irrelevante.  ,
+    #tokensP: 62
+}
+
+
+Q2 {
+    Pregunta: Un automóvil muestra una aceleración constante de 0.300 m/s2 paralela a la autopista. El automóvil pasa sobre una elevación en el camino tal que lo alto de la elevación tiene forma de círculo con 500 m de radio. En el momento en que el automóvil está en lo alto de la elevación, su vector velocidad es horizontal y tiene un magnitud de 6.00 m/s. ¿Cuáles son la magnitud y dirección del vector aceleración total para el automóvil en este instante?
+    Respuesta: Puesto que el automóvil que acelera se mueve a lo largo de una trayectoria curva, este problema se clasifica como uno que involucra una partícula que experimenta aceleraciones tangencial y radial. La aceleración radial está dada por la ecuación ar = v^2/r, con v = 6 m/s y r = 500m. El vector aceleración radial se dirige recto hacia abajo y el vector aceleración tangencial tiene magnitud de 0.300 m/s^2 y es horizontal. Evaluando la aceleración radial se obtiene: -v^2/r = -(6 m/s)^2/500m = -36 m2/s2 / 500 = -0.0720 m/s2. Para encontrar la magnitud utilizamos la fórmula sqrt(ar^2 + at^2) = sqrt((-0.072 m/s^2)^2 + (0.300 m/s^2)^2) = 0.309 m/s^2. Y para hallar el ángulo entre el vector aceleración y la horizontal, se utiliza arc tan ar/at = arctan(-0.072 m/s^2/0.300 m/s^2) = -13.5 grados. ,
+    #tokensP: 123
+}
+
+
+Q3 {
+    Pregunta: Un bote que cruza un río ancho se mueve con una rapidez de 10.0 km/h en relación con el agua. El agua en el río tiene una rapidez uniforme de 5.00 km/h hacia el este en relación con la Tierra, 
+    Respuesta: Debido a que son velocidades independientes, es posible catalogar este movimiento como velocidades relativas, se conoce (todos los valores de la velocidad se dan en forma vectorial) vbr que es la velocidad del bote con respecto al río, se conoce vre, que es la velocidad del río en relación con la tierra. Lo que debe encontrarse es la velocidad resultante, vbr, que es la velocidad del bote con respecto a la tierra, esto es vbe = vbr + vre. Los términos de la ecuación se deben manipular como cantidades vectoriales. La rapidez vbe del bote con la tierra se halla mediante el teorema de pitágoras: vbe = sqrt(vbr^2 + vre^2) = sqrt(100 + 25) = 11.2 km/h. Y para hallar la dirección usamos arctan(vre/vbr) = arctan(5/10) = 26.6 grados. Según como se fije el sistema de referencia y yendo el bote hacia el norte, podemos decir que la velocidad resultante irá en noreste en relación a la tierra resultando el bote río abajo. ,
+    #tokensP: 59
+}
+
+
+Q4 {
+    Pregunta: Si usted conoce los vectores de posición de una partícula en dos puntos, a lo largo de su trayectoria, y también conoce el intervalo de tiempo durante el que se mueve de un punto al otro, ¿puede determinar la velocidad instantánea de la partícula? ¿Su velocidad promedio? Explique, 
+    Respuesta: Para determinar la velocidad instantánea de una partícula es necesario conocer el vector que describe la posición de la partícula a lo largo de una trayectoria. Por lo tanto, no, con solo dos vectores en dos puntos separados por un intervalo de tiempo NO es posible conocer la velocidad instantánea, por otra parte, si es posible conocer la velocidad promedio en los puntos que esten separados por ese mismo rango de tiempo, debido a que la velocidad promedio es: vprom = xf - xi / tf - ti (recordando que la velocidad promedio se escribe en este caso de forma vectorial), entonces, la respuesta es afirmativa. ,
+    #tokensP: 73
+}
+
+
+Q5 {
+    Pregunta: Una nave espacial se desplaza en el espacio con una velocidad constante. De súbito, una fuga de gas lateral de la nave le da una aceleración constante en una dirección perpendicular a la velocidad inicial. La orientación de la nave no cambia, así que la aceleración permanece perpendicular a la dirección original de la velocidad. ¿Cuál es la forma de la trayectoria seguida por la nave en esta situación?,
+    Respuesta: Una parábola, esto porque la componente de la velocidad que llevaba la nave en la dirección no fue modificada y se mantiene constante, el hecho de que la aceleración sea perpendicular a este movimiento provoca que el cohete se desplace en una trayectoría parabólica aunque se mantenga avanzando en la dirección original. ,
+    #tokensP: 96
+}
+
+
+Q6 {
+    Pregunta: Galileo sugirió la idea para esta pregunta: un marinero suelta una llave desde lo alto de un mástil vertical del bote mientras éste tiene un movimiento rápido y estable en línea recta hacia adelante. ¿Dónde golpea la llave en la cubierta? a) adelante de la base del mástil, b) en la base del mástil, c) detrás de la base del mástil, d) en el lado desde donde sopla el viento de la base del mástil. , 
+    Respuesta: Esta pregunta es otro ejemplo agradable de movimiento relativo, básicamente lo que se plantea es que se suelta la llave desde lo alto del mástil, el bote lleva una velocidad y la llave se encuentra en poder del marinero que, estando en el bote también, mantienen todos una misma velocidad, a pesar de que el bote se mueva y la llave caiga, si despreciamos el viento en este problema, la llave caerá justo en la base del mástil, es decir, opción b. Nuevamente se reitera, debido a que la velocidad del bote respecto a la tierra es la misma que la de la llave respecto a la tierra, la llave y el bote muevanse o no tendrán el mismo comportamiento de tirar un objeto en tierra firme.  ,
+    #tokensP: 118
+}
+
+
+Q7 {
+    Pregunta: Un pez que nada en un plano horizontal tiene velocidad (se escribe de forma vectorial) vi = 4.00i + 1.00j m/s en un punto del océano donde la posición relativa a cierta roca es ri = 10.0i - 4.00j m. Después de que el pez nada con aceleración constante durante 20.0 s, su velocidad es vi = 20.0i - 5.00j m/s. ¿Cuáles son las componentes de la aceleración? Si el pez mantiene aceleración constante, ¿dónde está en t = 25.0 s y en qué dirección se mueve? ,
+    Respuesta: La aceleración en x a=x = delta vx/delta t = 20 - 4 / 20 = 0.800 m/s^2. Y en y es ay = delta vy / delta t = -5 - 1 / 20 = -0.300 m/s^2, para la dirección usamos angle = arctan (-0.3/0.8) = -20.6 grados y en t = 25s su posición está especificada por sus coordenadas y la dirección del movimiento por el ángulo de su velocidad. entonces, en x su posición final es xf = xi + vxit + 0.5*ax*t^2 = 10 + 4(25) + 0.5(0.800)(25)^2 = 360 metros y en y es yf = yi + vyit + 0.5*ay*t^2 = -4 + 1(25) + 0.5(-0.300)(25)^2 = -72.7 metros y para la dirección hallamos los vectores finales de velocidad, vxf = vxi + axt = 4 + 0.8(25) = 24 m/s y vyf = viy + ayt = 1-0.3(25) = -6.5 m/s, usando el arctan = (-6.50/24) = -15.2 grados. 	
+    #tokensP: 156
+}
+
+
+Q8 {
+    Pregunta: Un proyectil se dispara en tal forma que su alcance horizontal es igual a tres veces su altura máxima. ¿Cuál es el ángulo de proyección? ,
+    Respuesta: Para esto, se recurre a la fórmula de altura, esta es h = vi^2sen^2(tetha inicial) / 2g y la fórmula de alcance horizontal es R = vi^2sen(2 tetha inicial) /g. Si el alcance es igual a tres veces la altura máxima, asumimos R = 3hmax, reemplazando en la ecuación  R = vi^2sen(2 tetha inicial) /g = 3h = 3vi^2sen^2(tetha inicial) / 2g, aquí, entonces,se simiplifica todo lo posible. sen(2tetha)/ sen^2(tetha) = 3/2 y usando la identidad de ángulo doble tal que sin(2tetha) = 2sincos entonces esto sería 2sincos/sin^2 = 3/2 y esto es cos/sin = 3/4, usamos arcot o invertimos las fraciones y usamos arc tan(4/3) = 53.1 grados. ,
+    #tokensP: 38
+}
+
+
+Q9 {
+    Pregunta: Un jugador de futbol patea una roca horizontalmente de un montículo de 40.0 m de alto en un estanque. Si el jugador escucha el sonido del chapoteo 3.00 s después. ¿cuál fue la rapidez inicial dada por la roca? Suponga que la rapidez del sonido en el aire es de 343 m/s ,
+    Respuesta: El golpe horizontal da 0 velocidad a la roca, el tiempo de vuelo es de: yf = yi + vyit + 0.5*ay*t^2, siendo la posición final de -40m, decimos: -40 = 0 + 0 + 0.5(-9.8)(t^2) y resolviendo la ecuación obtenemos que t = 2.86 segundos. Si se escuchó 3 segundos después entonces: 3 - 2.86 = 0.143, este es el tiempo para que el jugador escuche el sonido. Entonces, si el sonido viaja a (343 m/s)(0.143s) = 49 metros. Entonces el desplazamiento sería igual a = sqrt(x^2 + 160m^2), siendo la x la distancia horizontal recorrida, resolviendo la anterior ecuación se obtiene x = 28.3 = vxit + 0t^2 y aqu]i se resuelve para la velocidad inicial en i, que vendría a ser: vxi = 28.3 m / 2.86 s = 9.91 m/s, ,
+    #tokensP: 83
+}
+
+
+Q10 {
+
+    Pregunta: Conforme se separan los cohetes propulsores, los astronautas del trasbordador espacial sienten una aceleración de hasta 3g, donde g =9.80 m/s2. En su entrenamiento, los astronautas montan un dispositivo en el que experimentan tal aceleración como una aceleración centrípeta. En específico, el astronauta se sujeta con firmeza al extremo de un brazo mecánico que luego gira con rapidez constante en un círculo horizontal. Determine la rapidez de rotación, en revoluciones por segundo, requerida para dar a un astronauta una aceleración centrípeta 
+de 3.00g mientras está en movimiento circular con radio de 9.45 m.
+    Respuesta: Para esto, usamos la fórmula de la aceleración centrípeta, esta es: ac = v^2/r, y, despejando para la velocidad, tenemos: v = sqrt(ac*r), reemplazando v = sqrt(3(9.8)(9.45)) = 16.7 m/s. Es decir, al tener tres veces la fuerza g, simplemente multiplicamos la aceleración por 3, y operamos lo demás, y, para convertirlo a revoluciones por segundo debemos entender que cada revolucion recorre todo el perímetro de la trayectoria, es decir, 2pir, en este caso 2pi(9.45) = 59.4 m. Entonces la tasa de rotación sería 16.7 m/s (1 rev/ 59.4 m) = 0.291 rev/s, usamos factores de conversión para este caso puntal. Es decir, son 0.281 revoluciones por segundo.  ,
+    #tokensP: 172
+}
